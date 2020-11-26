@@ -17,4 +17,17 @@ public class FizzBuzzTest {
         // then
         assertEquals(String.valueOf(order), actual);
     }
+
+    @Test
+    void should_return_Fizz_when_count_off_given_multiple_of_first_special_number() {
+        // given
+        int order = 3;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // when
+        String actual = fizzBuzz.countOff(order);
+
+        // then
+        assertEquals("Fizz", actual);
+    }
 }
