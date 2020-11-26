@@ -12,6 +12,9 @@ public class FizzBuzz {
         else if (order % SPECIAL_NUMBER_FOR_BUZZ == 0) {
             return "Buzz";
         }
+        else if (order % 7 == 0) {
+            return "Whizz";
+        }
         return String.valueOf(order);
     }
 }
