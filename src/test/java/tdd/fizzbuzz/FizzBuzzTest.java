@@ -30,4 +30,17 @@ public class FizzBuzzTest {
         // then
         assertEquals("Fizz", actual);
     }
+
+    @Test
+    void should_return_Buzz_when_count_off_given_multiple_of_special_number_for_buzz() {
+        // given
+        int order = 5;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // when
+        String actual = fizzBuzz.countOff(order);
+
+        // then
+        assertEquals("Buzz", actual);
+    }
 }
