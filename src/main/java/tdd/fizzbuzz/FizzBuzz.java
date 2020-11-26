@@ -20,6 +20,6 @@ public class FizzBuzz {
         if (order % SPECIAL_NUMBER_FOR_WHIZZ == 0) {
             shoutMessage += WHIZZ;
         }
-        return shoutMessage.isEmpty()? String.valueOf(order) : shoutMessage;
+        return shoutMessage.isEmpty() ? String.valueOf(order) : shoutMessage;
     }
 }
