@@ -19,7 +19,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_Fizz_when_count_off_given_multiple_of_first_special_number() {
+    void should_return_Fizz_when_count_off_given_multiple_of_special_number_for_fizz() {
         // given
         int order = 3;
         FizzBuzz fizzBuzz = new FizzBuzz();
