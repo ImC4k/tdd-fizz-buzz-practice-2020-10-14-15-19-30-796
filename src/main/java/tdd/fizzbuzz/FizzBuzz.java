@@ -8,6 +8,9 @@ public class FizzBuzz {
         if (order % SPECIAL_NUMBER_FOR_FIZZ == 0) {
             return "Fizz";
         }
+        else if (order % 5 == 0) {
+            return "Buzz";
+        }
         return String.valueOf(order);
     }
 }
