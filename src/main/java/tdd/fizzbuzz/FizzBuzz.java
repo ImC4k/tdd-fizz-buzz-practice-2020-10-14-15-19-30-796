@@ -7,15 +7,16 @@ public class FizzBuzz {
     public static final int SPECIAL_NUMBER_FOR_WHIZZ = 7;
 
     public String countOff(int order) {
+        String shoutMessage = "";
         if (order % SPECIAL_NUMBER_FOR_FIZZ == 0) {
-            return "Fizz";
+            shoutMessage += "Fizz";
         }
-        else if (order % SPECIAL_NUMBER_FOR_BUZZ == 0) {
-            return "Buzz";
+        if (order % SPECIAL_NUMBER_FOR_BUZZ == 0) {
+            shoutMessage += "Buzz";
         }
         else if (order % SPECIAL_NUMBER_FOR_WHIZZ == 0) {
             return "Whizz";
         }
-        return String.valueOf(order);
+        return shoutMessage.isEmpty()? String.valueOf(order) : shoutMessage;
     }
 }
