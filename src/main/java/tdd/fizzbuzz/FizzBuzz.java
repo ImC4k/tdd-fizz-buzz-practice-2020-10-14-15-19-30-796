@@ -4,6 +4,7 @@ public class FizzBuzz {
 
     public static final int SPECIAL_NUMBER_FOR_FIZZ = 3;
     public static final int SPECIAL_NUMBER_FOR_BUZZ = 5;
+    public static final int SPECIAL_NUMBER_FOR_WHIZZ = 7;
 
     public String countOff(int order) {
         if (order % SPECIAL_NUMBER_FOR_FIZZ == 0) {
@@ -12,7 +13,7 @@ public class FizzBuzz {
         else if (order % SPECIAL_NUMBER_FOR_BUZZ == 0) {
             return "Buzz";
         }
-        else if (order % 7 == 0) {
+        else if (order % SPECIAL_NUMBER_FOR_WHIZZ == 0) {
             return "Whizz";
         }
         return String.valueOf(order);
