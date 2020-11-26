@@ -90,4 +90,16 @@ class FizzBuzzTest {
         // then
         assertEquals("BuzzWhizz", actual);
     }
+
+    @Test
+    void should_return_FizzBuzzWhizz_when_count_off_given_multiple_of_special_number_for_fizz_and_buzz_and_whizz() {
+        // given
+        int order = 105;
+
+        // when
+        String actual = fizzBuzz.countOff(order);
+
+        // then
+        assertEquals("FizzBuzzWhizz", actual);
+    }
 }
