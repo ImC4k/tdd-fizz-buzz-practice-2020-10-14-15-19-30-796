@@ -4,12 +4,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FizzBuzzTest {
+class FizzBuzzTest {
+    FizzBuzz fizzBuzz = new FizzBuzz();
+
     @Test
     void should_return_string_of_number_when_count_off_given_non_special_number() {
         // given
         int order = 1;
-        FizzBuzz fizzBuzz = new FizzBuzz();
 
         // when
         String actual = fizzBuzz.countOff(order);
@@ -22,7 +23,6 @@ public class FizzBuzzTest {
     void should_return_Fizz_when_count_off_given_multiple_of_special_number_for_fizz() {
         // given
         int order = 3;
-        FizzBuzz fizzBuzz = new FizzBuzz();
 
         // when
         String actual = fizzBuzz.countOff(order);
@@ -35,7 +35,6 @@ public class FizzBuzzTest {
     void should_return_Buzz_when_count_off_given_multiple_of_special_number_for_buzz() {
         // given
         int order = 5;
-        FizzBuzz fizzBuzz = new FizzBuzz();
 
         // when
         String actual = fizzBuzz.countOff(order);
