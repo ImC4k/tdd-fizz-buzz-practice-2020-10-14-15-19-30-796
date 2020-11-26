@@ -14,8 +14,8 @@ public class FizzBuzz {
         if (order % SPECIAL_NUMBER_FOR_BUZZ == 0) {
             shoutMessage += "Buzz";
         }
-        else if (order % SPECIAL_NUMBER_FOR_WHIZZ == 0) {
-            return "Whizz";
+        if (order % SPECIAL_NUMBER_FOR_WHIZZ == 0) {
+            shoutMessage += "Whizz";
         }
         return shoutMessage.isEmpty()? String.valueOf(order) : shoutMessage;
     }
